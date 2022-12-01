@@ -1,3 +1,4 @@
+import { ProductService } from './../../../services/product.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from 'src/app/domain/product';
@@ -13,7 +14,7 @@ export class CreateComponent implements OnInit {
   products: any;
   product: Product = new Product();
 
-  constructor(private router: Router, private productService: ProductoService) {
+  constructor(private router: Router, private productService: ProductService) {
 
     let params = this.router.getCurrentNavigation()?.extras.queryParams;
     if (params) {
