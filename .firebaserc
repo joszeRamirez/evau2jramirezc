@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "evau2josze": {
+      "hosting": {
+        "evau2jramirezc": [
+          "evau2josze"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "evau2josze"
+  }
+}

@@ -103,9 +103,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "evau2jramirezc:build:production",
+            "firebaseProject": "evau2josze",
+            "firebaseHostingSite": "evau2josze"
+          }
         }
       }
     }
-  },
-  "defaultProject": "evau2jramirezc"
+  }
 }
