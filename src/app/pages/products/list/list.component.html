@@ -1,1 +1,20 @@
-<p>list works!</p>
+<h1>{{title}}</h1>
+<table>
+    <tr>
+        <th>Precio</th>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Stock</th>
+        <th>Acciones</th>
+    </tr>
+    <tr *ngFor="let p of products | async">
+        <td>{{p.price}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.category}}</td>
+        <td>{{p.stock}}</td>
+        <td><button (click)="editProduct(p)">Editar</button>
+            <button (click)="deleteProduct(p)">Eliminar</button></td>
+    </tr>
+</table>
+<br>
+<button (click)="goNewProduct()">Nuevo producto</button>
