@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+
+<form>
+    <label for="txtPrice">Precio: </label>
+    <input id="txtPrice" name="txtPrice" placeholder="Ingrese el precio" [(ngModel)]="product.code" /><br />
+    <label for="txtName">Nombre: </label>
+    <input id="txtName" name="txtName" placeholder="Ingrese texto"  [(ngModel)]="product.name" /><br />
+    <label for="txtCat">Categoría: </label>
+    <input id="txtCat" name="txtCat" placeholder="Ingrese texto" [(ngModel)]="product.price" /><br />
+    <label for="txtStock">Stock: </label>
+    <input id="txtStock" name="txtStock" placeholder="Ingrese número" [(ngModel)]="product.price" /><br />
+    <br>
+    <button (click)="guardar()">Guardar</button>
+</form>
+<br>
+<button (click)="goListProducts()">Listado de productos</button>
